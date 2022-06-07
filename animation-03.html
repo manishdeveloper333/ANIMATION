@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic light</title><style>
+                 *{
+            margin: 0;color: rgb(255, 255, 255);
+            padding: 0;text-transform: capitalize;
+        }
+
+            body{display: flex;
+            width: 100%; font-family: 'Orbitron', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #000000 0%, #000000 55%, rgb(172, 166, 166) 60%, rgb(172, 172, 169) 100% );
+        }
+        #l1 {
+            margin-left: -85px;
+            margin-top: 274px;       
+        }
+       #l2 {
+            margin-left: -20px;
+            margin-top: 299px;       
+        }
+  
+        span{color: yellow;
+            background-color: red;
+            border-radius: 50%;
+            width: 20px;height: 20px;
+            animation-name: example;
+            animation-duration: 1s;
+        }
+    
+        @keyframes example {
+            0% {
+                background-color: rgb(255, 153, 0);
+            }
+    
+            25% {
+                background-color: yellow;
+            }
+    
+            35% {
+                background-color: red;
+            }
+    
+            
+            50% {
+                background-color: yellow;
+            }
+    
+            75% {
+                background-color: rgb(49, 219, 49);
+            }
+            100% {
+                background-color: green;
+            }
+          }
+
+    .moon{
+ 
+  width: 156px;
+  height: 155px;
+
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 15s;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 95%;}
+}
+
+.car{
+  width: 100px;
+  height: 100px;margin-top: 485px;
+float: right;
+  position: relative;margin-left: 70em;
+  animation-name: mymove2;
+  animation-duration: 15s;
+}
+
+@keyframes mymove2 {
+  from {right:0px;}
+  to {right: 100%;}
+}
+.traffic{
+margin-top: 260px;
+margin-left: -100px;
+  background-repeat: no-repeat;
+  background-size: 65% 300PX;
+  background-image: url(trasffic.png);
+  color: red;
+}
+h1{
+  font-size: 1.2rem;
+ margin-top: 130px;
+ color: blueviolet;
+}
+
+
+        </style>
+</head>
+<body>
+
+    
+    <div ></div>
+<img src="—Pngtree—halo moon in hand drawn_5336575.png" height="120px" class="moon">
+<div class="traffic">
+  <h1>traffic light</h1>
+
+</div>
+
+<span id="l1"></span>
+<span id="l2"></span>
+
+
+<div class="car">
+    <img src="car2.png" height="120px">
+    <img src="car.png" height="120px">
+    <img src="car3.png" height="120px" class="car3">
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-name </title>
+    <link rel="stylesheet" href="animate.min.css">
+    <style>
+
+      
+   
+    .container{
+          border: 12px solid green;  width: 80%;
+    height:780px;
+    margin: auto;
+    
+    margin-top: 50px;
+    }
+       .container:hover{
+background-color: black;transition: 5s;
+       }
+    .cloud{
+  width: 200px;
+  height: 100px;
+  background:url(images/icons8-clouds-100.png);
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 9s;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1300px;}
+}
+    .cloud2{
+  width: 256px;
+  height: 55px;float: right;
+  background:url(images/icons8-clouds-64.png);
+  position: relative;
+  animation-name: mymove2;
+  animation-duration: 9s;
+}
+@keyframes mymove2 {
+  from {right: 0px;}
+  to {right: 1300px;}
+}
+
+
+    #div1 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin-left:650px;
+  margin-top:179px;
+  perspective: 120px;
+}
+
+#div2{
+  padding: 54px;
+  position: absolute;
+  border: 1px solid black;
+  background: rgba(100,100,100,0.5); 
+  transform-style: preserve-3d;
+  transform: rotatex( 75deg);
+
+}
+      #div2:hover{
+background-color: beige;transition: 3s;
+       }
+      body:hover{
+        color:beige;transition: 1s;
+      }
+      h1{
+         text-transform: capitalize;
+      }
+    
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="cloud"></div>
+        <div class="cloud2"></div>
+        <div class="text">
+         
+<div id="div1">
+  <div id="div2">---<p>--</p><p>--</p></div>
+</div>
+<h1 class="animate__animated animate__bounce">welcome to website </h1>
+<h1 class="animate__animated animate__zoomIn">cloud and road</h1>
+
+     
+    </div>
+    </div>
+</body>
+</html>
